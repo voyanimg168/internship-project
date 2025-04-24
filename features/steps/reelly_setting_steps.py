@@ -25,7 +25,7 @@ def verify_community_page_opens(context):
     context.app.setting_page.verify_community_page_opens()
 
 
-@then('Verify Contact Support button is clickable')
-def verify_contact_support_button_clickable(context):
-    context.app.setting_page.verify_contact_support_button_clickable()
+@then('Click Contact Support button')
+def click_contact_support_button(context):
+    context.app.setting_page.click_contact_support_button()
 

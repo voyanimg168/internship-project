@@ -6,7 +6,7 @@ from pages.base_page import Page
 
 class SettingPage(Page):
     SETTINGS_ICON = (By.CSS_SELECTOR, "[class='settings-code w-embed']")
-    COMMUNITY_BTN = (By.CSS_SELECTOR, "[class='setting-text']"[6])
+    COMMUNITY_BTN = (By.CSS_SELECTOR, '[href="/community"]')
     COMMUNITY_PG_URL = 'https://soft.reelly.io/community'
     SUPPORT_BTN = (By.CSS_SELECTOR, "[class='support']")
 
@@ -19,5 +19,5 @@ class SettingPage(Page):
         self.wait_until_clickable_click(*self.COMMUNITY_BTN)
 
 
-    def verify_contact_support_button_clickable(self):
+    def click_contact_support_button(self):
         self.wait_until_clickable_click(*self.SUPPORT_BTN)

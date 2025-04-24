@@ -9,4 +9,4 @@ Feature: Test Scenarios for Reelly Setting Page
     And Click Continue signin button
     And Click on Settings
     And Click on Community
-    Then Verify Contact support button is clickable
+    Then Click Contact support button

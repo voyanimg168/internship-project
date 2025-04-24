@@ -5,7 +5,7 @@ from time import sleep
 
 SIGNIN_URL = 'https://soft.reelly.io/sign-in'
 EMAIL = 'jackdaw_mg@yahoo.com'
-PASSWORD = '*******'
+PASSWORD = 'Percival'
 SIGNIN_EMAIL = (By.CSS_SELECTOR, "[data-name='Email 2']")
 SIGNIN_PASSWORD = (By.CSS_SELECTOR, "[data-name='Password']")
 CONTINUE_PASSWORD_BTN = (By.CSS_SELECTOR, "[class='login-button w-button']")
@@ -36,4 +36,3 @@ def input_signin_password(context):
 @when('Click continue signin button')
 def click_continue_signin_btn(context):
     context.app.login_page.click_continue_signin_btn()
-    sleep(10)
