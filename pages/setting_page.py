@@ -16,6 +16,7 @@ class SettingPage(Page):
 
 
     def click_on_community(self):
+        self.driver.execute_script("window.scrollBy(0,1000)", "")
         self.wait_until_clickable_click(*self.COMMUNITY_BTN)
 
 

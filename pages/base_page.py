@@ -40,7 +40,7 @@ class Page:
         self.wait.until(
             EC.element_to_be_clickable(locator),
             message=f'Element not clickable by {locator}'
-        )
+        ).click()
 
     def wait_until_visible(self, *locator):
         self.wait.until(
